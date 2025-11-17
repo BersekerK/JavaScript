@@ -1,15 +1,10 @@
       let num1 = 5;
       let num2 = 10;
-      console.log( "Il primo numero è: " + num1 );
-      console.log( "Il secondo numero è: " + num2 );
+      let num3 = 15;
+      let num4 = 20;
+      let num5 = 25;
 
-      let stringa = "stringa";
-      stringa = "nuova stringa";
-      console.log( `Questa invece è una ${stringa}` );
-
-
-        const pGreco = 3.14159265359;
-        console.log( `Il valore di pGreco è: ${pGreco}` );
-
-        pGreco = 659;
-        console.log( `Il nuovo valore di pGreco è: ${pGreco}` );
+      let sum = num1 + num2 + num3 + num4 + num5;
+      console.log("La somma è: " + sum);
+      let media = sum / 5;
+      console.log("La media è: " + media);
