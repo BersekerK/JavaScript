@@ -1,15 +1,7 @@
-      let num1 = 5;
-      let num2 = 10;
-      console.log( "Il primo numero è: " + num1 );
-      console.log( "Il secondo numero è: " + num2 );
+  let currentyear = 2025;
+  let yeardate = 1991;
 
-      let stringa = "stringa";
-      stringa = "nuova stringa";
-      console.log( `Questa invece è una ${stringa}` );
-
-
-        const pGreco = 3.14159265359;
-        console.log( `Il valore di pGreco è: ${pGreco}` );
-
-        pGreco = 659;
-        console.log( `Il nuovo valore di pGreco è: ${pGreco}` );
+  let age = currentyear - yeardate;
+  console.log("La tua età è: : " + age);
+  let remaingyears = 100 - age;
+  console.log(`Ti mancano ${remaingyears} anni per raggiungere i 100 anni!`);
