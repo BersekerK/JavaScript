@@ -8,7 +8,7 @@
       console.log( `Questa invece è una ${stringa}` );
 
 
-        const pGreco = 3.14;
+        const pGreco = 3.14159265359;
         console.log( `Il valore di pGreco è: ${pGreco}` );
 
         pGreco = 659;
