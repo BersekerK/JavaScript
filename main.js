@@ -1,15 +1,10 @@
-      let num1 = 5;
-      let num2 = 10;
-      console.log( "Il primo numero è: " + num1 );
-      console.log( "Il secondo numero è: " + num2 );
-
-      let stringa = "stringa";
-      stringa = "nuova stringa";
-      console.log( `Questa invece è una ${stringa}` );
+  const totalGatti = 99;
+  const gattiPerFila = 7;
 
 
-        const pGreco = 3.14159265359;
-        console.log( `Il valore di pGreco è: ${pGreco}` );
+	const numeroFile = Math.floor(totalGatti / gattiPerFila);
+	const resto = totalGatti % gattiPerFila;
+	const mancanti = resto === 0 ? gattiPerFila : (gattiPerFila - resto);
+	const avanzo = resto === 0 ? 0 : resto;
 
-        pGreco = 659;
-        console.log( `Il nuovo valore di pGreco è: ${pGreco}` );
+	console.log(`Ci sono ${numeroFile} file di gatti e ne mancano ${mancanti} per una nuova fila, con un avanzo di ${avanzo}`);
