@@ -1,15 +1,10 @@
-      let num1 = 5;
-      let num2 = 10;
-      console.log( "Il primo numero è: " + num1 );
-      console.log( "Il secondo numero è: " + num2 );
+let num1 = 52;
+let num2 = 12;
 
-      let stringa = "stringa";
-      stringa = "nuova stringa";
-      console.log( `Questa invece è una ${stringa}` );
+let somma = num1 + num2;
+let differenza = num1 - num2;
+let multi = num1 * num2;
+let div = num1 / num2;
+let potenza = Math.pow(num1, num2);
 
-
-        const pGreco = 3.14159265359;
-        console.log( `Il valore di pGreco è: ${pGreco}` );
-
-        pGreco = 659;
-        console.log( `Il nuovo valore di pGreco è: ${pGreco}` );
+console.log(`Con i numeri da te scelti, \ni risultati delle varie operazioni sono: \n-somma ${somma} \n-sottrazione ${differenza} \n-moltiplicazione ${multi} \n-divisione ${div} \n-potenza ${potenza}`);
