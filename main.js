@@ -1,15 +1,19 @@
-      let num1 = 5;
-      let num2 = 10;
-      console.log( "Il primo numero è: " + num1 );
-      console.log( "Il secondo numero è: " + num2 );
+console.log("Numeri pari da 1 a 20:");
 
-      let stringa = "stringa";
-      stringa = "nuova stringa";
-      console.log( `Questa invece è una ${stringa}` );
+let sommaDispari = 0;
+let countDispari = 0;
 
+for (let i = 1; i <= 20; i++) {
+  if (i % 2 === 0) {
+    // Numero pari
+    console.log(i);
+  } else {
+    // Numero dispari - accumula per calcolare media
+    sommaDispari += i;
+    countDispari++;
+  }
+}
 
-        const pGreco = 3.14159265359;
-        console.log( `Il valore di pGreco è: ${pGreco}` );
-
-        pGreco = 659;
-        console.log( `Il nuovo valore di pGreco è: ${pGreco}` );
+// Calcola e stampa la media dei numeri dispari
+let mediaDispari = sommaDispari / countDispari;
+console.log(`\nMedia dei numeri dispari: ${mediaDispari}`);
