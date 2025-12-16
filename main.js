@@ -1,15 +1,18 @@
-      let num1 = 5;
-      let num2 = 10;
-      console.log( "Il primo numero è: " + num1 );
-      console.log( "Il secondo numero è: " + num2 );
+// Inserire numero
+let n = prompt("inserisci un numero");
 
-      let stringa = "stringa";
-      stringa = "nuova stringa";
-      console.log( `Questa invece è una ${stringa}` );
-
-
-        const pGreco = 3.14159265359;
-        console.log( `Il valore di pGreco è: ${pGreco}` );
-
-        pGreco = 659;
-        console.log( `Il nuovo valore di pGreco è: ${pGreco}` );
+    function stampa(n){
+        for(let i=1; i<=n; i++){
+   
+        if (i % 15 === 0){
+            console.log("FizzBuzz");
+        } else if (i % 3 === 0){
+            console.log("Fizz");
+        } else if (i % 5 === 0){
+            console.log("Buzz");
+        } else {
+            console.log(i);
+        }
+    }
+    }
+stampa(n);
