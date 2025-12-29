@@ -1,15 +1,18 @@
-      let num1 = 5;
-      let num2 = 10;
-      console.log( "Il primo numero è: " + num1 );
-      console.log( "Il secondo numero è: " + num2 );
+let numbers = [5, 12, 8, 130, 44];
 
-      let stringa = "stringa";
-      stringa = "nuova stringa";
-      console.log( `Questa invece è una ${stringa}` );
+// Calcola la somma degli elementi
+let somma = numbers.reduce((acc, num) => acc + num, 0);
 
+// Calcola la media
+let media = somma / numbers.length;
 
-        const pGreco = 3.14159265359;
-        console.log( `Il valore di pGreco è: ${pGreco}` );
+// Filtro i valori minori della media
+let sotto_media = numbers.filter(num => num < media);
 
-        pGreco = 659;
-        console.log( `Il nuovo valore di pGreco è: ${pGreco}` );
+// Filtro i valori sopra la media
+let sopra_media = numbers.filter(num => num > media);
+
+// Output
+console.log("Media:", media);
+console.log("Valori minori:", sotto_media);
+console.log("Valori maggiori:", sopra_media);
