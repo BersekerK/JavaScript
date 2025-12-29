@@ -1,15 +1,8 @@
-      let num1 = 5;
-      let num2 = 10;
-      console.log( "Il primo numero è: " + num1 );
-      console.log( "Il secondo numero è: " + num2 );
+let numbers = [3, 7, -2, 5, 8, 1, 2, 5, 6, -4, 12, 25];
 
-      let stringa = "stringa";
-      stringa = "nuova stringa";
-      console.log( `Questa invece è una ${stringa}` );
+// Ordinamento in ordine decrescente
+let decrescente = numbers.sort((a, b) => b - a);
 
 
-        const pGreco = 3.14159265359;
-        console.log( `Il valore di pGreco è: ${pGreco}` );
-
-        pGreco = 659;
-        console.log( `Il nuovo valore di pGreco è: ${pGreco}` );
+console.log("Ordinamento decrescente:", decrescente);
+console.log("Ordinamento crescente:", decrescente.reverse());
